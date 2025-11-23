@@ -8,3 +8,12 @@ This exercise covers multiple testing concepts
 - Write tests for OrderService with mocked dependencies
 - Refactor OrderProcessorBad to be testable (fix the globals problem)
 
+## Installation
+
+- `docker compose up -d`
+- `docker compose run --rm composer install`
+
+
+### Running Tests
+
+Run `docker compose run --rm php vendor/bin/phpunit tests/`
