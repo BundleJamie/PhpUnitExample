@@ -1,0 +1,22 @@
+{
+    "name": "root/app",
+    "type": "project",
+    "require": {
+        "php": "8.5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.4",
+        "phpstan/phpstan": "^2.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Root\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jamie"
+        }
+    ]
+}

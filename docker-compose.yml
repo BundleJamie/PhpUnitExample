@@ -1,0 +1,18 @@
+services:
+  php:
+    build:
+      context: ./php
+    container_name: php84-app
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8080:8080"
+    command: php -S 0.0.0.0:8080 -t public
+
+  composer:
+    image: composer:latest
+    container_name: composer-runner
+    working_dir: /app
+    volumes:
+      - ./:/app
